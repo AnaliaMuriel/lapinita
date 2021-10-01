@@ -1,0 +1,149 @@
+
+        /* codigo CSS */
+         /*
+         sintaxis
+         selector {
+         propiedad1: valor;
+         propiedad2: valor;
+         propiedadN: valorN;
+         }
+         tipos de selectores
+         etiqueta -> cualquier elemento html que conocemos y selecciona todo aquel que coincida.
+         clase -> tenemos que utilizar en html un atributo llamado class
+         ID-> se refiere a un identificador unico que nunca se debe repetir.
+         * selecciona todos los elementos de html
+         */
+            /* reseteos de estilos por defectos aplicados por el navegador*/
+*{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+}
+body {
+        background-color: rgb(143, 235, 23); /*color de fondo*/
+        color:rgb(9, 66, 4); /*color del texto*/
+        font-family: 'Roboto', sans-serif;
+}
+ul{
+        list-style: none;
+}
+.cabecera {
+        background-color: #323232;  
+        padding-top: 16px;
+        padding-bottom: 16px;
+        width: 100%;
+        box-shadow:0 2px 6px rgb(233, 250, 0);
+}  
+
+.titulo__web  {
+        text-decoration: none;
+}
+
+.contenedor {     
+        max-width: 80%;
+        margin: 0 auto; 
+
+                            
+/*propiedades que luego vamos a ver en detalle en una clase*/   
+        display: flex;   
+        justify-content: space-between;
+        align-items: center;
+}
+.logo {
+        width: 92px;
+        height: 92px; 
+}
+.navegacion {
+        min-width: 50%;
+}
+.navegacion__lista {
+/*propiedades que luego vamos a ver en detalle en una clase*/   
+        display: flex;   
+        justify-content: space-between;
+        align-items: center;
+}
+.navegacion__enlace {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+}
+/*hero*/
+
+.hero {
+        background-color:rgb(143, 235, 23);
+        height: 600px;
+        width: 100%;
+        background-image: url(../imagenes/anana\ 3d.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+       /* text-align: center; /*ajustamos el texto como cuando estamos en word*/
+      /*propiedades que luego vamos a ver en detalle en una clase*/   
+        display: flex;   
+        justify-content: flex-start;
+        align-items: flex-end;  
+}
+.titulo-principal {
+        color:white;
+        background-color: tomato;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-right: 16px;
+        border: 2px solid coral;
+        font-size: 40px;
+}
+/*main-section*/
+.main-section {
+background-color: yellow;
+padding-top: 64%;
+padding-bottom: 64px;
+padding-left: 32px;
+padding-right: 32px;
+}
+.contenido{
+        width: 50%;
+}
+.banner1{
+        display: block;
+        max-width: 350px;
+        margin: 0 auto;
+}
+.parrafobanner1{
+        font-weight: 100;
+        margin-bottom: 32px ;/*separar elementos uso margin*/
+        color:white
+}
+.boton{
+        display: inline-block;
+        background-color:rgb(233, 250, 0);
+        text-decoration: none;
+        color:saddlebrown;
+        padding:10px 20px ;
+        border-radius: 20px;
+        font-weight: 900;
+}
+.titulobanner1 {
+        font-size: 48px;
+        color:white;
+        margin-bottom: 32px;
+
+}
+a{
+        color:chocolate
+}
+h2{
+        color:black
+}
+.subtitulos {
+        color:rgb(233, 250, 0)
+}
+.parrafo {
+        color: rgb(252, 121, 14)
+}
+#tituloprincipal {
+        font-size: 50px;
+        color:saddlebrown 
+        blanchedalmond
+}
+            

@@ -5,50 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>proyecto la pinita oficial/inicio</title> <!--es lo que vemos en la pestaña del navegador-->
+    <!--vinculacion de CSS - forma correcta y optima -->
+    <link rel="stylesheet" href="css/estilos.css">
 </head> 
-<body><!--contenido visual de nuestro sitio web--> 
-    <header>
-          <h1>Bienvenidos a mi Tienda Online La Piñita</h1>
-<nav>
-    <img src="imagenes/logo la piñita.JPG"  alt="logotipo de mi marca"> 
-
-    <ul><!-- arriba lado izquierdo o centrado--> 
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
+<link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">" 
+<body> <!--contenido visual de nuestro sitio web--> 
+    <header class="cabecera">
+        <div class="contenedor">
+        <a class="titulo__web" href="./*">
+            <h1>Tienda Online La Piñita</h1>
+        </a>
+    <img class="logo" src="imagenes/la piñita logo circulo .png" alt="logotipo de mi marca">
+<nav class="navegacion">
+    <ul class="navegacion__lista"><!--flex--> 
+        <li>
+            <a class="navegacion__enlace" href="index.html">Inicio</a>
+        </li>
+        <li>
+            <a class="navegacion__enlace" href="productos.html">Productos</a>
+        </li>
+        <li>
+            <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+        </li>
     </ul> 
 </nav>  
      </header>
 <!--main-->
-<main> <h2>Noticias destacadas</h2>
-   <section>
-      <section> <!--seccion 1-->
-        <h2>Creaciones Artesanales</h2> 
-        <p><h3>En la piñita no solo se realizan productos a mano sino tambien reciclamos cosas.</h3></p>
-        <p><h4>Salud/belleza/Hogar.</h4></p>
-        <img src="Ramo de rosas" alt="creaciones artesanales">
-   </section>
-     <section> <!--seccion 2-->
-        <h2>Cosmetica</h2> 
-        <h3>Productos de belleza</h3>
-        <p></p>
-        <img src="cosmetologia" alt="cosmetologia">
-      <section>
-      <section> <!--seccion 3-->
-         <h2>Hogar</h2> 
-         <h3>Productos para cada rincon de tu casa</h3>
-         <p></p>
-         <img src="cuadritos de madera" alt="Hogar">
-      <section>
+     <main>   
+         <section class="hero">
+            <h1 class="titulo-principal">La Piñita Salud/belleza/Hogar.</h1>
+         </section>
+         <section class="main-seccion">
+             <div class="contenedor">
+                  <div class="contenido">
+                      <h2 class="titulobanner1">Bienvenidos</h2>
+                      <p class="parrafobanner1">Las artesanías de la piñita dependen en un cien por ciento de la creatividad, la innovación y el
+                    labor por lo desconocido a conocer. La materia prima usada para este proyecto,
+                    en su gran mayoría son algunos materiales biodegradables reciclados,productos veganos también en muchas
+                    ocasiones, se usa material que produce la naturaleza..entre otros.Lo que queremos a parte de dar un hermoso producto economico para el bolsillo de cada persona, es generar un gran impacto social.
+                    Considero que esta idea ayuda tambien a mejorar en muchos aspectos te invito a que veas este proyecto.
+                   - El que trabaja con las manos, esta regalando un pedacito de su corazon.
+                    Compra una artesania o producto a un emprendedor. Comparte, menciona y recomienda a tus conocidos.</p>
+                      <a class="boton" href="">boton o enlaces</a>
+                  </div>
+                  <div class="contenido">
+                      <img class="baner1" src="imagenes/fondo piña hundiendose.jpg" alt="">
+                  </div>
+             </div>
+         </section>
+         <section> <!--seccion 1-->
+            <h2 class="subtitulos">Noticias destacadas</h2>   
+            <div>
+            <h2 class="subtitulos">Creaciones Artesanales</h2> 
+             <p class="parrafo"><h3>En la piñita no solo se realizan productos a mano, sino tambien reciclamos productos con conciencia ambiental.</h3></p>
+             <p class="parrafo"><h3>Biodegradables,sustentables,veganos,ecologicos y reutilizables.</h3></p>
+             <img src="imagenes/fondo_la_piñita-removebg-preview (1).png" alt="Creaciones Artesanales">
+            </div>
+        </section>
+        <section> <!--seccion 2-->
+        <h2 class="subtitulos">Cosmetica</h2>
+        <div>
+            <h3>Productos de belleza</h3>
+            <img src="imagenes/cosmetologia.jpg" alt="cosmetologia">
+        </div>  
+        <section>
+        <section> <!--seccion 3-->
+         <h2 class="subtitulos">Hogar</h2> 
+         <div>
+            <h3>Productos para cada rincon de tu casa</h3>
+            <img src="imagenes/cuadritos de madera.JPG" alt="Hogar">
+        <section>
+         </div>
         <section> <!--seccion 4-->
-            <h2>Textiles</h2> 
+         <h2 class="subtitulos">Textiles</h2> 
+         <div>
             <h3>Productos elaborados con tela</h3>
-            <p></p>
-            <img src="almohadon de hojas" alt="Textiles">
-          <section> 
-   </section>
-    <div>
-        <h2>Formulario de Contacto</h2> 
+            <img src="imagenes/almohadon de hojas.jpg" alt="Textil">
+        </div>
+        <section>
+        <section> <!--seccion 5-->
+         <h2 class="subtitulos">Aromaterapia</h2>
+         <div>
+            <h3>Productos de Aromaterapia</h3>
+            <img src="imagenes/velas.jpg" alt="aromaterapia">  
+        </div>  
+        </section> 
+    </section>
+     </main>
+        <h2 class="subtitulos">Formulario de Contacto</h2>    
         <div>
             <form action="" method="post" enctype="">
 
@@ -91,22 +137,24 @@
         </div>
     </div>
 </main>
+<h1 id="tituloprincipal">proyecto la pinita oficial</h1>
 <!--Informacion final de mi sitio web-->  
    
 <footer>
-    <h2>Redes Sociales</h2>
+    <h2 class="subtitulos">Redes Sociales</h2>
 <ul>    
     <li><a href="https://www.instagram.com/lapinita_oficial/" target="_blank"> instagram</a></li>
     <li><a href="https://www.facebook.com/La-Pi%C3%B1ita-107489798228415" target="_blank"> facebook</a></il> 
 </ul>
    <!--dinamico-->
-    <h2>Contacto Email</h2><h3>anucha9_@hotmail.com</h3>
+    <h2 class="subtitulos">Contacto Email</h2><h3>anucha9_@hotmail.com</h3>
 
 <!--etiqueta de cierre-->
-<h2>proyecto la pinita oficial</h2>
+<h2 class="subtitulos">proyecto la pinita oficial</h2>
 <div>
-    <p>Enviar un whatsapp:<a href="https://api.whatsapp.com/send?phone=542974571613">button</a></p>
-    <p>Derechos Reservados Lararia</p>
+    <p class="parrafo">Enviar un whatsapp:<a href="https://api.whatsapp.com/send?phone=542974571613">button</a></p>
+    <p class="parrafo">Derechos Reservados Lararia</p>
+    
 </div>
 </footer>
 </body>
