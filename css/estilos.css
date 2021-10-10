@@ -109,6 +109,27 @@ padding-right: 32px;
         max-width: 350px;
         margin: 0 auto;
 }
+.fondo_piñita {
+        width: 550px;
+        height: 600px;
+}
+.belleza {
+        width: 550px;
+        height: 600px;
+}
+.textiles
+{
+        width: 550px;
+        height: 600px;
+}
+.hogar {
+        width: 600px;
+        height: 400px;
+}
+.aromaterapia {
+        width: 550px;
+        height: 600px;
+}
 .parrafobanner1{
         font-weight: 100;
         margin-bottom: 32px ;/*separar elementos uso margin*/
@@ -136,7 +157,7 @@ h2{
         color:black
 }
 .subtitulos {
-        color:rgb(233, 250, 0)
+        color:rgb(233, 250, 0)        
 }
 .parrafo {
         color: rgb(252, 121, 14)
@@ -145,5 +166,13 @@ h2{
         font-size: 50px;
         color:saddlebrown 
         blanchedalmond
+}
+.luffa{
+        width: 550px;
+        height: 600px;
+}
+.agua_jabon {
+        width: 550px;
+        height: 600px;  
 }
             
