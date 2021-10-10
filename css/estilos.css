@@ -22,7 +22,15 @@
 body {
         background-color: rgb(143, 235, 23); /*color de fondo*/
         color:rgb(9, 66, 4); /*color del texto*/
-        font-family: 'Roboto', sans-serif;
+        font-family:'Roboto',sans-serif;
+}
+.precio_jabon{
+        color:rgb(9, 66, 4); /*color del texto*/
+        font-family:'Roboto',sans-serif;
+}
+.precio_agua_de_rosas{
+        color:rgb(9, 66, 4); /*color del texto*/
+        font-family:'Roboto',sans-serif;
 }
 ul{
         list-style: none;
