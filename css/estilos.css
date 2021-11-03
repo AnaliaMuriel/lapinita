@@ -178,8 +178,21 @@ padding-right: 32px;
         color:white;
         margin-bottom: 32px;
 }
-
-/* Nuestros Porductos*/
+/*Parrafo*/
+.Creaciones_Artesanles{
+        text-align:center;
+}
+.parrafo_subtitulo {
+        padding: 12px;
+        text-align: center;
+        text-transform: uppercase;
+}       
+.parrafo {
+        color: rgb(252, 121, 14);
+        padding: 12px;
+        text-align: right;
+} 
+/* Nuestros Porductos imagenes*/
 .belleza {
         width: 550px;
         height: 600px;
@@ -198,49 +211,6 @@ padding-right: 32px;
         height: 600px;
 }
 
-/*Formato de estilos para Titulos y Subtitulos*/
-h2{ 
-        background-color:yellow;
-        color:black;
-        padding:12px;
-        text-align: left  
-}
-.subtitulos {
-        background-color: rgb(233, 250, 0);
-        color:black;
-        padding: 12px;
-        margin: 12px;
-        text-align: center                
-}
-.subtitulo__formulario {
-        color:black ;
-        padding: 12px;
-        text-align-last: left;
-}
-.formulario {
-        background-color: #F0B622;
-        color:black;
-        padding:12px;
-        text-align-last: right;
-}
-.tienda_online{
-        padding:12px;
-        text-align-last: right;
-}
-
-.Creaciones_Artesanles{
-        text-align:center;
-}
-.parrafo_subtitulo {
-        padding: 12px;
-        text-align: center;
-        text-transform: uppercase;
-}       
-.parrafo {
-        color: rgb(252, 121, 14);
-        padding: 12px;
-        text-align: right;
-} 
 /*nuestros productos*/
 .Cosmetica {
         color:rgb(233, 250, 0);
@@ -283,14 +253,41 @@ h2{
         color:saddlebrown 
         blanchedalmond
 }
-.luffa{
-        width: 550px;
-        height: 600px;
-}
 .agua_jabon {
         width: 550px;
         height: 600px;  
 }
+/*Formato de estilos para Titulos y Subtitulos*/
+h2{ 
+        background-color:yellow;
+        color:black;
+        padding:12px;
+        text-align: left  
+}
+.subtitulos {
+        background-color: rgb(233, 250, 0);
+        color:black;
+        padding: 12px;
+        margin: 12px;
+        text-align: center                
+}
+/*Formulario de Contacto*/
+.subtitulo__formulario {
+        color:black ;
+        padding: 12px;
+        text-align-last: left;
+}
+.formulario {
+        background-color: #F0B622;
+        color:black;
+        padding:12px;
+        text-align-last: right;
+}
+.tienda_online{
+        padding:12px;
+        text-align-last: right;
+}
+
 /*footer*/
 .footer {
         background-color:rgb(212, 245, 26);
@@ -384,13 +381,21 @@ h1 {
 
 /*Medias Querys*/
 @media (max-width: 768px) {
+        /*.logo */
         .cabecera .contenedor {
                 flex-direction: column;
         }
-        .main-section .contendor {
+        /*.titulo__web*/
+        .main .hero {
                 flex-direction: column;
         }
-        .main-section .contenido {
+        .main-seccion .hero {
+                flex-direction:column;
+        }
+        .main-seccion .contenedor {
+                flex-direction: column;
+        }
+        .main-section .contenido1 {
                 width: 100%;
         }
         .main-section .banner1 {
@@ -402,8 +407,20 @@ h1 {
                 align-items: flex-start;
         }
         /*banner_video*/
-        /*Nuestros Productos*/
-        .producto {
+        .banner_video .banner_video_titulo_creaciones{
+                flex-direction:column; 
+                align-items: flex-start;
+        }
+        .banner_video .banner_video_promocional{
+                flex-direction:column; 
+                align-items: flex-start;
+        }
+         /*Nuestros_Productos*/
+        .Nuestros_Productos .Cosmetica{
+                flex-direction:column; 
+                align-items: flex-start;
+        }
+        .producto .productos__titulo {
                 flex-direction: column; 
                 align-items: center;  
         }
@@ -412,15 +429,42 @@ h1 {
                 flex-direction: column;   
                 align-items: center;
         }
-        #tienda ._online.tienda_online {
+        .h1 .tienda_online {
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;
+        }
+        .footer .Contactos_Generales{
                 flex-direction: column;  
                 align-items: center;
         }
-        .footer {
+        .h1 .titulo__proyecto{
                 flex-direction: column;  
                 align-items: center;
+                font-size: 28px;
         }
-        .titulo_principal{
+        .footer .footer_enlace{
+                flex-direction: column;  
+                align-items: center;
+}
+        .footer_flex-padre .contacto_email{
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;
+        }
+        .h2 .redes__sociales{
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;
+        }
+        .h1 .titulo__proyecto {
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;
+        }
+
+        /*titulos y parrafos*/
+        .tituloprincipal {
                 font-size: 28px;
         }
         .parrafo_subtitulo{
@@ -429,10 +473,11 @@ h1 {
         .titulo_banner1{
                 font-size: 28px; 
         }
-        .navegacion_lista {
+        /*.logo
+        .navegacion*/
+        .navegacion__lista {
                 gap: 10px;
                 flex-wrap: wrap;
         }
-
 }
 
