@@ -36,11 +36,16 @@ ul{
         list-style: none;
 }
 .cabecera {
-        background-color: #323232;  
+        background-color: #c5da0a;  
         padding-top: 16px;
         padding-bottom: 16px;
         width: 100%;
         box-shadow:0 2px 6px rgb(233, 250, 0);
+       
+        position:fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
 }  
 
 .titulo__web  {
@@ -64,14 +69,19 @@ ul{
 .navegacion__lista {
 /*propiedades que luego vamos a ver en detalle en una clase*/   
         display: flex;   
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
 }
 .navegacion__enlace {
         color: white;
         text-decoration: none;
         font-size: 20px;
+        transition: all 1s;
 }
+.navegacion__enlace:hover {
+        color:black;
+}
+
 /*hero*/
 
 .hero {
@@ -119,28 +129,35 @@ padding-right: 32px;
         display: block;
         max-width: 100%;
 }
-.video__promocional {
-        background-color: chocolate;
-        width: 100%; 
-        height: 600px;
-        object-fit: cover;      
-}
-.belleza {
-        width: 550px;
+
+
+/*banner video*/
+.banner_video {
+        background-color: yellow;
+        position: relative;
         height: 600px;
 }
-.textiles
-{
-        width: 550px;
-        height: 600px;
+.banner_video_titulo_creaciones {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 32px;          
+
+        position:absolute;
+        bottom:0;
+        z-index: 10;
+        background-color: yellow;
+        color:black;
+        width:100%;
+        opacity: 0.8px;
+        filter: blur(2px);
+        
 }
-.hogar {
-        width: 600px;
-        height: 400px;
-}
-.aromaterapia {
-        width: 550px;
-        height: 600px;
+.banner_video_promocional {
+        width: 50%; 
+        height: 100%;
+        object-fit: cover;   
+        
+        position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
 }
 .parrafobanner1{
         font-weight: 100;
@@ -161,13 +178,32 @@ padding-right: 32px;
         color:white;
         margin-bottom: 32px;
 }
-a{
-        color:chocolate;
+
+/* Nuestros Porductos*/
+.belleza {
+        width: 550px;
+        height: 600px;
 }
+.textiles
+{
+        width: 550px;
+        height: 600px;
+}
+.hogar {
+        width: 600px;
+        height: 400px;
+}
+.aromaterapia {
+        width: 550px;
+        height: 600px;
+}
+
+/*Formato de estilos para Titulos y Subtitulos*/
 h2{ 
-        color: rgb(233, 250, 0);
+        background-color:yellow;
+        color:black;
         padding:12px;
-        text-align: center  
+        text-align: left  
 }
 .subtitulos {
         background-color: rgb(233, 250, 0);
@@ -185,7 +221,7 @@ h2{
         background-color: #F0B622;
         color:black;
         padding:12px;
-        text-align-last: left;
+        text-align-last: right;
 }
 .tienda_online{
         padding:12px;
@@ -194,14 +230,6 @@ h2{
 
 .Creaciones_Artesanles{
         text-align:center;
-}
-
-.subtitulo_creaciones {
-        background-color: yellow;
-        color:black;
-        margin-bottom: 20px;     
-        padding: 32px ;
-        text-align: center;
 }
 .parrafo_subtitulo {
         padding: 12px;
@@ -271,24 +299,22 @@ h2{
 }
 .footer_flex-padre{
         display: flex;
-        flex-direction: row;    
-        padding-bottom: 64px;   
-}           
+        flex-direction: column;    
+        background-color:greenyellow;
+        color:black;
+        text-align:center;   
+}             
 .footer_enlace {
         color: black;
-        margin-top:20px;
-        margin: bottom 20px;
         text-align: center;
-        padding: 10px 20px;      
-}
-.contactos {
-        display: flex;
-        justify-content: space-between;
-}
+        padding: 20px 18px;   
+}   
+
+/*        .Contactos_Generales*/
 .email {
-        padding:16px;
-        text-align-last: left;
+        text-align-last: center;
         justify-content: space-between;
+        padding:16px;
 }
 .email_icono {
         background-color:orange;
@@ -302,7 +328,7 @@ h2{
 }
 .redes__sociales {
         color:black;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         text-align: center;
 }
 .instagram_icono{
@@ -313,15 +339,19 @@ h2{
         background-color:orange;
         color:black;
 }
-
 .contacto_email {
         color:black;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         text-align: center;
 }
 .titulo__proyecto{
         color:green;
         margin-bottom: 20px;
+}
+h1 {
+        color:white;
+        padding:12px;
+        text-align: center;
 }
 .tienda_online {
         color:rgb(252, 121, 14);
@@ -351,3 +381,58 @@ h2{
         width:200px;
         height:200px;  
 }
+
+/*Medias Querys*/
+@media (max-width: 768px) {
+        .cabecera .contenedor {
+                flex-direction: column;
+        }
+        .main-section .contendor {
+                flex-direction: column;
+        }
+        .main-section .contenido {
+                width: 100%;
+        }
+        .main-section .banner1 {
+                width: 100%;
+        }
+        /*Creaciones_Artesanales*/
+        .Creaciones_Artesanales .parrafo_subtitulo {
+                flex-direction:column; 
+                align-items: flex-start;
+        }
+        /*banner_video*/
+        /*Nuestros Productos*/
+        .producto {
+                flex-direction: column; 
+                align-items: center;  
+        }
+        /*subtitulo_formulario*/
+        .formulario .form {
+                flex-direction: column;   
+                align-items: center;
+        }
+        #tienda ._online.tienda_online {
+                flex-direction: column;  
+                align-items: center;
+        }
+        .footer {
+                flex-direction: column;  
+                align-items: center;
+        }
+        .titulo_principal{
+                font-size: 28px;
+        }
+        .parrafo_subtitulo{
+                font-size: 28px;
+        }
+        .titulo_banner1{
+                font-size: 28px; 
+        }
+        .navegacion_lista {
+                gap: 10px;
+                flex-wrap: wrap;
+        }
+
+}
+

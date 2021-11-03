@@ -35,7 +35,8 @@
 </nav>  
      </header>
 <!--main-->
-     <main>   
+<main>   
+    <div> 
          <section class="hero">
             <h1 class="titulo-principal">La Piñita Salud/belleza/Hogar.</h1>
          </section>
@@ -57,50 +58,59 @@
                   </div>
              </div>
          </section>
-         <section class="Creaciones_Artesanales"> <!--seccion 1-->   
-            <h2 a class="subtitulo_creaciones">Creaciones Artesanales</h2> 
-            <h3 class="parrafo_subtitulo">En la piñita no solo se realizan productos a mano, sino tambien reciclamos productos con conciencia ambiental.</h3>
-            <h3 class="parrafo_subtitulo">Biodegradables,sustentables,veganos,ecologicos y reutilizables.</h3>
+
+         <section class="Creaciones_Artesanales"> <!--seccion 1-->
+            <div>
+                 <h3 class="parrafo_subtitulo">En la piñita no solo se realizan productos a mano, sino tambien reciclamos productos con conciencia ambiental.Biodegradables,sustentables,veganos,ecologicos y reutilizables.</h3>
+            </div>
          </section>
-         <section>
-            <video class="video__promocional" src="videos/video promocional casamiento.mp4." controls muted autoplay loop width="300" height="300" > </video>
-         </section>
-    <div class="Nuestros_Productos">
-        <section class="Cosmetica"> <!--seccion 2-->
-        <h2 class="Productos__titulo">Cosmetica</h2>
-        <div class="producto">
-            <span class="jam jam-female producto__icono"></span>
-            <h3 class="producto__titulo">Cosmetica</h3>
-            <img class="belleza" src="imagenes/home spray.jpg" alt="cosmetologia">
-        </div> 
-        <h2 class="Productos__titulo">Hogar</h2> 
-         <div class="producto">
-            <span class="jam jam-home producto__icono"></span>
-            <h3 class="producto__titulo">Hogar<h3>
-            <img class="hogar" src="imagenes/cuadritos de madera.JPG" alt="Hogar">
-         </div>
-        <h2 class="Productos__titulo">Textiles</h2> 
-         <div class="producto">
-            <span class="jam jam-scissors producto__icono"></span>
-            <h3 class="producto__titulo">Textiles</h3>
-            <img class="textiles" src="imagenes/almohadon de hojas.jpg" alt="Textil">
-        </div>
-         <h2 class="Productos__titulo">Aromaterapia</h2>
-         <div class="producto">
-            <span class="jam jam-candle producto__icono"></span>
-            <h3 class="producto__titulo">Aromaterapia</h3>
-            <img class="aromaterapia" src="imagenes/velas.jpg" alt="aromaterapia">  
-        </div>
-    </div>  
-        </section> 
+         
+         <section class="banner_video">
+           <div>         
+                 <h2 a class="banner_video_titulo_creaciones">Creaciones Artesanales</h2> 
+                 <video class="banner_video_promocional" src="videos/video promocional casamiento.mp4." muted autoplay loop width="300" height="300" > </video>
+           </div>
+         </section> 
+         
+        <div class="Nuestros_Productos">
+         <section class="Cosmetica"> <!--seccion 2--> 
+            
+            <h2 class="Productos__titulo">Cosmetica</h2>
+           <div class="producto">
+                <span class="jam jam-female producto__icono"></span>
+                <h3 class="producto__titulo"></h3>
+                <img class="belleza" src="imagenes/home spray.jpg" alt="cosmetologia">
+           </div> 
+           
+           <h2 class="Productos__titulo">Hogar</h2> 
+           <div class="producto">
+                <span class="jam jam-home producto__icono"></span>
+                <h3 class="producto__titulo"><h3>
+                <img class="hogar" src="imagenes/cuadritos de madera.JPG" alt="Hogar">
+           </div>
+           
+           <h2 class="Productos__titulo">Textiles</h2> 
+           <div class="producto">
+                <span class="jam jam-scissors producto__icono"></span>
+                <h3 class="producto__titulo"></h3>
+                <img class="textiles" src="imagenes/almohadon de hojas.jpg" alt="Textil">
+            </div>
+                
+           <h2 class="Productos__titulo">Aromaterapia</h2>
+           <div class="producto">
+                <span class="jam jam-candle producto__icono"></span>
+                <h3 class="producto__titulo"></h3>
+                <img class="aromaterapia" src="imagenes/velas.jpg" alt="aromaterapia">  
+           </div>    
+    </div> 
+         </section> 
     </section>
-     </main>
         <h2 class="subtitulo__formulario">Formulario de Contacto</h2>    
         <div class="formulario">
             <form action="" method="post" enctype="">
 
                 <fieldset>
-                    <legend>Datos de contacto</legend>
+                    <h2><legend>Datos de contacto</legend></h2>
                     <div>
                         <label for="nombre">Nombre</label>
                         <input type="text" name="nombre"  id="nombre" placeholder="Ingresa tu nombre" id="nombre">
@@ -136,14 +146,12 @@
                 <input type="reset" value="Limpiar">
             </form>
         </div>
-    </div>
 </main>
 <h1 class="tienda_online" id="tienda_online">Tienda Online La piñita</h1>
 <!--Informacion final de mi sitio web-->  
    
 <footer class="footer">
-     <div class="contactos">
-        
+     <div class="Contactos_Generales">
     <div class="footer_flex-padre" >
         <h2 class="redes__sociales">Redes Sociales</h2>
         <ul class="footer_enlace">    
@@ -158,7 +166,7 @@
         </div>
   </div>
 <!--etiqueta de cierre-->
-<h2 class="titulo__proyecto">Proyecto La Piñita Oficial</h2>
+<h1 class="titulo__proyecto">Proyecto La Piñita Oficial</h1>
      <div>
     <p class="jam jam-whatsapp whatsapp__icono"><a class="fijar__img" href="https://api.whatsapp.com/send?phone=542974571613"></a></p>
     <p class="parrafo_autor">Derechos Reservados Lararia</p>
@@ -167,3 +175,4 @@
 </footer>
 </body>
 </html>
+
