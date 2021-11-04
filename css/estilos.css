@@ -194,21 +194,17 @@ padding-right: 32px;
 } 
 /* Nuestros Porductos imagenes*/
 .belleza {
-        width: 550px;
-        height: 600px;
+        width: 100%;     
 }
 .textiles
 {
-        width: 550px;
-        height: 600px;
+        width: 100%;      
 }
 .hogar {
-        width: 600px;
-        height: 400px;
+        width: 100%;
 }
 .aromaterapia {
-        width: 550px;
-        height: 600px;
+        width: 100%;
 }
 
 /*nuestros productos*/
@@ -380,9 +376,13 @@ h1 {
 }
 
 /*Medias Querys*/
-@media (max-width: 768px) {
+@media (min-width: 480px) {
+        .body {
+                background-color: yellow;
+        }
         .cabecera .contenedor {
                 flex-direction: column;
+                align-items: center;
         }
         .titulo__web{
                 flex-direction: column;  
@@ -431,18 +431,23 @@ h1 {
                 font-size: 28px;
         }
         .main-seccion{
-                        flex-direction: column;  
-                        align-items: center;
+                flex-direction: column;  
+                align-items: center;
         }
         .main-section .contenido1 {
+                flex-direction: column;  
+                align-items: center;
                 width: 100%;
         }
         .main-section .banner1 {
+                flex-direction: column;  
+                align-items: center;
                 width: 100%;
         }
         /*Creaciones_Artesanales*/
         .Creaciones_Artesanales .parrafo_subtitulo {
                 flex-direction:column; 
+                font-size:16px;
                 align-items: flex-start;
         }
         /*banner_video*/
@@ -538,9 +543,9 @@ h1 {
 
         /*titulos y parrafos*/
          .h2{
-        flex-direction: column;  
-        align-items: center;
-        font-size: 28px;  
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;  
         }
         .subtitulos{
                 flex-direction: column;  
