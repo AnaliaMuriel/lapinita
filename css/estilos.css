@@ -136,27 +136,26 @@ padding-right: 32px;
         background-color: yellow;
         position: relative;
         height: 600px;
+        position:absolute;
+        bottom:0;
+        z-index: 10;       
 }
 .banner_video_titulo_creaciones {
         font-size: 48px;
         text-align: center;
-        margin-bottom: 32px;          
-
-        position:absolute;
-        bottom:0;
-        z-index: 10;
-        background-color: yellow;
-        color:black;
-        width:100%;
-        opacity: 0.8px;
-        filter: blur(2px);
-        
+        margin-bottom: 32px;   
+                    
 }
 .banner_video_promocional {
         width: 50%; 
         height: 100%;
         object-fit: cover;   
         position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
+        background-color: yellow;
+        color:black;
+        width:100%;
+        opacity: 0.8px;
+        filter: blur(2px);      
 }
 .parrafobanner1{
         font-weight: 100;
