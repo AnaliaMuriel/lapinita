@@ -162,7 +162,7 @@ padding-right: 32px;
 .parrafobanner1{
         font-weight: 100;
         margin-bottom: 32px ;/*separar elementos uso margin*/
-        color:white
+        color:black;
 }
 .boton{
         display: inline-block;
@@ -175,7 +175,7 @@ padding-right: 32px;
 }
 .titulobanner1 {
         font-size: 48px;
-        color:white;
+        color:black;
         margin-bottom: 32px;
 }
 /*Parrafo*/
@@ -208,10 +208,7 @@ padding-right: 32px;
 }
 
 /*nuestros productos*/
-.Cosmetica {
-        color:rgb(233, 250, 0);
-        padding: 32px,64px               
-}
+        
 .productos__titulo{
         text-align: right;
         font-size: 48px;
@@ -224,6 +221,8 @@ padding-right: 32px;
         color:black
 }
 .Nuestros_Productos{
+        color:rgb(233, 250, 0);
+        padding: 32px,64px;             
         display: flex;
         justify-content: flex-start;
         gap: 10px;
@@ -377,16 +376,17 @@ h1 {
 
 /*Medias Querys*/
 @media (max-width: 768px) {
+        /*header*/
         .cabecera .contenedor {
                 flex-direction: column;
         }
+        .navegacion .navegacion__lista {
+                gap: 10px;
+                flex-wrap: wrap;
+        }  
+        /*main*/   
         .hero .titulo-principal {
                 flex-direction: column;
-        }
-        .h1{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
         }
         .main-seccion .contenedor {
                 flex-direction: column;
@@ -396,25 +396,32 @@ h1 {
                 flex-direction: column;  
                 align-items: center;
         }
-        .banner_video{
+        .banner_video .banner_video_promocional {
+                flex-direction: column;  
+                align-items: center;
                 width: 100%;
         }
-        .h2{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
-        .banner_video_promocional{
-                flex-direction: column;
-        }
-        .Nuestros_Productos{
+        .Nuestros_Productos .producto {
                 flex-direction: column;
                 align-items: center;
         } 
+        .subtitulo__formulario .formulario{
+        flex-direction: column;
+        align-items: center;
+        }
         .footer_flex-padre {
                 flex-direction: column;  
         }
         .footer_enlace{
+                flex-direction: column;
+                align-items: center;
+                font-size: 28px;
+        }
+        .fijar__imagen {
+                flex-direction: column;
+                align-items: center;
+        }
+        .parrafo_autor{
                 flex-direction: column;
                 align-items: center;
                 font-size: 28px;
@@ -425,9 +432,25 @@ h1 {
         .titulobanner1{
                 font-size: 28px;
         }
-        .navegacion__lista{
-                gap: 10px;
-                flex-wrap: wrap;
-        }     
+        .h1{
+                flex-direction: column;  
+                align-items: center;
+                font-size: 28px;
+        }
+        .h2{
+                flex-direction: column;
+                align-items: center;
+                font-size: 28px;
+        }
+        .a{
+                flex-direction: column;
+                align-items: center;
+                font-size: 28px;
+        }
+        .p{
+                flex-direction: column;
+                align-items: center;
+                font-size: 28px;
+        }
 }
 
