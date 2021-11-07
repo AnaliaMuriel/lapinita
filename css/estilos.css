@@ -20,7 +20,7 @@
         box-sizing: border-box;
 }
 body {
-        background-color: rgb(143, 235, 23); /*color de fondo*/
+        background-color: yellow; /*color de fondo*/
         color:rgb(9, 66, 4); /*color del texto*/
         font-family:'Roboto',sans-serif;
 }
@@ -376,193 +376,58 @@ h1 {
 }
 
 /*Medias Querys*/
-@media (min-width: 480px) {
-        .body {
-                background-color: yellow;
-        }
+@media (max-width: 768px) {
         .cabecera .contenedor {
                 flex-direction: column;
-                align-items: center;
         }
-        .titulo__web{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .contenedor{
-                flex-direction: column;  
-                align-items: center;
-        }
-        .logo{
-                flex-direction: column;  
-                align-items: center;
-        }
-        .navegacion{
-                flex-direction: column;  
-                align-items: center;
-        }
-        .navegacion__lista { 
-                gap: 10px;
-                flex-wrap: wrap;
-                font-size: 28px;
-        }
-        .navegacion__enlace{
-                flex-direction: column;  
-                align-items: center;
-        }
-        .main .hero {
+        .hero .titulo-principal {
                 flex-direction: column;
-                align-items: center;
         }
-        .hero .titulo-principal{
+        .h1{
                 flex-direction: column;  
                 align-items: center;
                 font-size: 28px;
-        }
-        .main-seccion .hero {
-                flex-direction:column;
         }
         .main-seccion .contenedor {
                 flex-direction: column;
         }
-        .tituloprincipal {
+        /*.main-seccion.contenido*/
+        .Creaciones_Artesanales .parrafo_subtitulo {
                 flex-direction: column;  
+                align-items: center;
+        }
+        .banner_video{
+                width: 100%;
+        }
+        .h2{
+                flex-direction: column;
                 align-items: center;
                 font-size: 28px;
         }
-        .main-seccion{
-                flex-direction: column;  
+        .banner_video_promocional{
+                flex-direction: column;
+        }
+        .Nuestros_Productos{
+                flex-direction: column;
                 align-items: center;
-        }
-        .main-section .contenido1 {
+        } 
+        .footer_flex-padre {
                 flex-direction: column;  
+        }
+        .footer_enlace{
+                flex-direction: column;
                 align-items: center;
-                width: 100%;
+                font-size: 28px;
         }
-        .main-section .banner1 {
-                flex-direction: column;  
-                align-items: center;
-                width: 100%;
-        }
-        /*Creaciones_Artesanales*/
-        .Creaciones_Artesanales .parrafo_subtitulo {
-                flex-direction:column; 
-                font-size:16px;
-                align-items: flex-start;
-        }
-        /*banner_video*/
-        .banner_video{
-                flex-direction:column; 
-                align-items: flex-start;
+        .titulo-principal{
+                font-size: 28px;
         }
         .titulobanner1{
-                flex-direction:column; 
-                align-items: center;
                 font-size: 28px;
         }
-        .banner_video .banner_video_titulo_creaciones{
-                flex-direction:column; 
-                align-items: flex-start;
-        }
-        .banner_video .banner_video_promocional{
-                flex-direction:column; 
-                align-items: flex-start;
-        }
-        .parrafobanner1{
-                flex-direction:column; 
-                align-items: center;
-                font-size: 28px;
-        }
-        .boton{
-                flex-direction:column; 
-                align-items: center; 
-                font-size: 28px;
-        }
-         /*Nuestros_Productos*/
-        .Nuestros_Productos .Cosmetica{
-                flex-direction:column; 
-                align-items: flex-start;
-        }
-        .producto .productos__titulo {
-                flex-direction: column; 
-                align-items: center;  
-        }
-        /*subtitulo_formulario*/
-        .formulario .form {
-                flex-direction: column;   
-                align-items: center;
-        }
-        .subtitulo__formulario{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .h1 .tienda_online {
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .formulario{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .tienda_online{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .footer .Contactos_Generales{
-                flex-direction: column;  
-                align-items: center;
-        }
-        .h1 .titulo__proyecto{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .footer .footer_enlace{
-                flex-direction: column;  
-                align-items: center;
-}
-        .footer_flex-padre .contacto_email{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .h2 .redes__sociales{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .h1 .titulo__proyecto {
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-
-        /*titulos y parrafos*/
-         .h2{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;  
-        }
-        .subtitulos{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        
-        .parrafo_subtitulo{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .titulo_banner1{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px; 
-        }
-        
+        .navegacion__lista{
+                gap: 10px;
+                flex-wrap: wrap;
+        }     
 }
 
