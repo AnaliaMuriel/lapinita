@@ -156,7 +156,6 @@ padding-right: 32px;
         width: 50%; 
         height: 100%;
         object-fit: cover;   
-        
         position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
 }
 .parrafobanner1{
