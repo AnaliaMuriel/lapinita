@@ -1,166 +1,179 @@
 
-        /* codigo CSS */
-         /*
-         sintaxis
-         selector {
-         propiedad1: valor;
-         propiedad2: valor;
-         propiedadN: valorN;
-         }
-         tipos de selectores
-         etiqueta -> cualquier elemento html que conocemos y selecciona todo aquel que coincida.
-         clase -> tenemos que utilizar en html un atributo llamado class
-         ID-> se refiere a un identificador unico que nunca se debe repetir.
-         * selecciona todos los elementos de html
-         */
-            /* reseteos de estilos por defectos aplicados por el navegador*/
 *{
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+
 body {
-        background-color: yellow; /*color de fondo*/
-        color:rgb(9, 66, 4); /*color del texto*/
-        font-family:'Roboto',sans-serif;
+    background-color: rgb(143, 235, 23); /*color de fondo*/
+    color:rgb(9, 66, 4); /*color del texto*/
+    font-family:'Roboto',sans-serif;
 }
-.precio_jabon{
-        color:rgb(9, 66, 4); /*color del texto*/
-        font-family:'Roboto',sans-serif;
+
+main {
+    min-height: 100vh;
 }
-.precio_agua_de_rosas{
-        color:rgb(9, 66, 4); /*color del texto*/
-        font-family:'Roboto',sans-serif;
-}
+
 ul{
-        list-style: none;
+    list-style: none;
 }
+
+h1 {
+    color:white;
+    text-align: center;
+}
+
 .cabecera {
-        background-color: #c5da0a;  
-        padding-top: 16px;
-        padding-bottom: 16px;
-        width: 100%;
-        box-shadow:0 2px 6px rgb(233, 250, 0);
-       
-        position:fixed;
-        top: 0;
-        left: 0;
-        z-index: 1000;
+    background-color: #c5da0a;  
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    
+    
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }  
 
 .titulo__web  {
-        text-decoration: none;
+    text-decoration: none;
+    width: 70%;
 }
 
 .contenedor {     
-        margin: 0 auto;           
-/*propiedades que luego vamos a ver en detalle en una clase*/   
-        display: flex;   
-        justify-content: space-between;
-        align-items: center;
+    margin: 0 auto;           
+    /*propiedades que luego vamos a ver en detalle en una clase*/   
+    display: flex;   
+    justify-content: space-around;
+    align-items: center;
 }
+
 .logo {
-        width: 92px;
-        height: 92px; 
+    width: 92px;
+    height: 92px; 
 }
+
 .navegacion {
-        min-width: 50%;
+    min-width: 50%;
 }
+
 .navegacion__lista {
-/*propiedades que luego vamos a ver en detalle en una clase*/   
-        display: flex;   
-        justify-content: space-evenly;
-        align-items: center;
+    /*propiedades que luego vamos a ver en detalle en una clase*/   
+    display: flex;   
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 .navegacion__enlace {
-        color: white;
-        text-decoration: none;
-        font-size: 20px;
-        transition: all 1s;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
 }
+
 .navegacion__enlace:hover {
-        color:black;
+    color:black;
 }
 
 /*hero*/
 
 .hero {
-        background-color:rgb(143, 235, 23);
-        height: 600px;
-        width: 100%;
-        background-image: url(../imagenes/anana\ 3d.jpg);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-       /* text-align: center; /*ajustamos el texto como cuando estamos en word*/
-      /*propiedades que luego vamos a ver en detalle en una clase*/   
-        display: flex;   
-        justify-content: flex-start;
-        align-items: flex-end;  
+    background-color:rgb(143, 235, 23);
+    height: 600px;
+    width: 100%;
+    background-image: url(../imagenes/anana\ 3d.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* text-align: center; /*ajustamos el texto como cuando estamos en word*/
+    /*propiedades que luego vamos a ver en detalle en una clase*/   
+    display: flex;   
+    justify-content: flex-start;
+    align-items: flex-end;  
 }
+
 .titulo-principal {
-        color:white;
-        background-color: tomato;
-        padding-top: 16px;
-        padding-bottom: 16px;
-        padding-left: 16px;
-        padding-right: 16px;
-        border: 2px solid rgb(189, 252, 42);
-        font-size: 40px;
+    color:white;
+    background-color: tomato;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border: 2px solid rgb(189, 252, 42);
+    font-size: 40px;
 }
+
 /*main-section*/
-.main-section {
-background-color: yellow;
-padding-top: 64%;
-padding-bottom: 64px;
-padding-left: 32px;
-padding-right: 32px;
-}
-.contenido{
-        width: 50%;
+
+.main-seccion {
+    background-color: yellow;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
-.contenido1{
-        width: 50%;
-        padding: 20px;
+.main-seccion .contenedor {
+    margin: 0 auto;           
+    /*propiedades que luego vamos a ver en detalle en una clase*/   
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
 }
 
-.banner1{
-        display: block;
-        max-width: 100%;
+.contenido {
+    width: 50%;
+}
+
+.contenido1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.banner1 {
+    display: block;
+    max-width: 100%;
 }
 
 
 /*banner video*/
+
 .banner_video {
-        background-color: yellow;
-        position: relative;
-        height: 600px;
-        position:absolute;
-        bottom:0;
-        z-index: 10;       
+    background-color: yellow;
+    position: relative;
+    height: 600px;
 }
+
 .banner_video_titulo_creaciones {
-        font-size: 48px;
-        text-align: center;
-        margin-bottom: 32px;   
-                    
+    font-size: 48px;
+    text-align: center;
+              
+
+    position:absolute;
+    bottom:0;
+    z-index: 10;
+    background-color: yellow;
+    color:black;
+    width:100%;
+    opacity: 0.7;
+    /* filter: blur(2px);  */ 
 }
+
 .banner_video_promocional {
         width: 50%; 
         height: 100%;
         object-fit: cover;   
+        
         position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
-        background-color: yellow;
-        color:black;
-        width:100%;
-        opacity: 0.8px;
-        filter: blur(2px);      
+        right: 0;
 }
+
 .parrafobanner1{
         font-weight: 100;
         margin-bottom: 32px ;/*separar elementos uso margin*/
-        color:black;
+        color:white
 }
 .boton{
         display: inline-block;
@@ -173,7 +186,7 @@ padding-right: 32px;
 }
 .titulobanner1 {
         font-size: 48px;
-        color:black;
+        color:white;
         margin-bottom: 32px;
 }
 /*Parrafo*/
@@ -190,114 +203,117 @@ padding-right: 32px;
         padding: 12px;
         text-align: right;
 } 
-/* Nuestros Porductos imagenes*/
+
+/* nuestros productos */
+
+.nuestros-productos {
+    padding: 64px 0;
+}
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.producto {
+    box-shadow: 0 0 5px rgb(0,0, 0,4);
+    background-color: yellow;
+    padding:16px;
+    width: 100%;
+    max-width: 300px;  
+}
+
+.producto__titulo {
+    font-size: 24px;
+    margin:16px 0;
+    color:black;
+    text-align: center;
+}
+
+
+.producto__icono{
+    font-size: 50px;
+    background-color: lightgoldenrodyellow;
+    color:black;
+    border-radius: 50%;
+    padding:10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.producto img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
 .belleza {
-        width: 100%;     
+    width: 100%;
+         
 }
 .textiles
 {
-        width: 100%;      
+    width: 100%;      
 }
 .hogar {
-        width: 100%;
+    width: 100%;
 }
 .aromaterapia {
-        width: 100%;
+    width: 100%;
 }
 
-/*nuestros productos*/
-        
-.productos__titulo{
-        text-align: right;
-        font-size: 48px;
-        color: orangered;
-        margin-bottom: 64px;
-}
-.producto__titulo {
-        font-size: 24px;
-        margin:16px 0;
-        color:black
-}
-.Nuestros_Productos{
-        color:rgb(233, 250, 0);
-        padding: 32px,64px;             
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        text-align: center;
-}
-.producto{
-        box-shadow: 0 0 5px rgb(0,0, 0,4);
-        background-color: yellow;
-        padding:16px;
-        width: 100%;
-        max-width: 300px;  
-}
-.producto__icono{
-        font-size: 50px;
-        background-color: lightgoldenrodyellow;
-        color:black;
-        border-radius: 50%;
-        padding:10px;
-        display: inline-block;
-}
-#tituloprincipal {
-        font-size: 50px;
-        color:saddlebrown 
-        blanchedalmond
-}
-.agua_jabon {
-        width: 550px;
-        height: 600px;  
-}
+
+
 /*Formato de estilos para Titulos y Subtitulos*/
-h2{ 
-        background-color:yellow;
-        color:black;
-        padding:12px;
-        text-align: left  
-}
-.subtitulos {
-        background-color: rgb(233, 250, 0);
-        color:black;
-        padding: 12px;
-        margin: 12px;
-        text-align: center                
-}
-/*Formulario de Contacto*/
-.subtitulo__formulario {
-        color:black ;
-        padding: 12px;
-        text-align-last: left;
-}
 .formulario {
-        background-color: #F0B622;
-        color:black;
-        padding:12px;
-        text-align-last: right;
+    background-color: #F0B622;
+    color:black;
+    padding: 64px 0;
+
 }
-.tienda_online{
-        padding:12px;
-        text-align-last: right;
+
+.formulario__subtitulo {
+    color:black;
+    padding: 12px;
+    text-align: right;
 }
+
+.form {
+    max-width: 500px;
+    
+    margin-left: auto;
+    padding: 16px;
+}
+
+.form div {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Formulario de Contacto*/
+
 
 /*footer*/
 .footer {
-        background-color:rgb(212, 245, 26);
-        color: black;
-        padding:32px 16px;
+    background-color:rgb(212, 245, 26);
+    color: black;
+    padding:32px 16px;
 }
+
 .footer_flex-padre{
-        display: flex;
-        flex-direction: column;    
-        background-color:greenyellow;
-        color:black;
-        text-align:center;   
-}             
+    display: flex;
+    flex-direction: column;    
+    background-color:greenyellow;
+    color:black;
+    text-align:center;   
+}  
+
 .footer_enlace {
-        color: black;
-        text-align: center;
-        padding: 20px 18px;   
+    color: black;
+    text-align: center;
+    padding: 20px 18px;   
 }   
 
 /*        .Contactos_Generales*/
@@ -338,11 +354,7 @@ h2{
         color:green;
         margin-bottom: 20px;
 }
-h1 {
-        color:white;
-        padding:12px;
-        text-align: center;
-}
+
 .tienda_online {
         color:rgb(252, 121, 14);
 }
@@ -372,83 +384,56 @@ h1 {
         height:200px;  
 }
 
+.precio_jabon{
+    color:rgb(9, 66, 4); /*color del texto*/
+    font-family:'Roboto',sans-serif;
+}
+
+.precio_agua_de_rosas{
+    color:rgb(9, 66, 4); /*color del texto*/
+    font-family:'Roboto',sans-serif;
+}
+
+.agua_jabon {
+    width: 550px;
+    height: 600px;  
+}
+
 /*Medias Querys*/
 @media (max-width: 768px) {
-        /*header*/
-        .cabecera .contenedor {
-                flex-direction: column;
-        }
-        .navegacion .navegacion__lista {
-                gap: 10px;
-                flex-wrap: wrap;
-        }  
-        /*main*/   
-        .hero .titulo-principal {
-                flex-direction: column;
-        }
-        .main-seccion .contenedor {
-                flex-direction: column;
-        }
-        /*.main-seccion.contenido*/
-        .Creaciones_Artesanales .parrafo_subtitulo {
-                flex-direction: column;  
-                align-items: center;
-        }
-        .banner_video .banner_video_promocional {
-                flex-direction: column;  
-                align-items: center;
-                width: 100%;
-        }
-        .Nuestros_Productos .producto {
-                flex-direction: column;
-                align-items: center;
-        } 
-        .subtitulo__formulario .formulario{
+    h1 {
+        font-size: 25px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .titulo-principal {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .main-seccion {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .main-seccion .contenedor {
         flex-direction: column;
-        align-items: center;
-        }
-        .footer_flex-padre {
-                flex-direction: column;  
-        }
-        .footer_enlace{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
-        .fijar__imagen {
-                flex-direction: column;
-                align-items: center;
-        }
-        .parrafo_autor{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
-        .titulo-principal{
-                font-size: 28px;
-        }
-        .titulobanner1{
-                font-size: 28px;
-        }
-        .h1{
-                flex-direction: column;  
-                align-items: center;
-                font-size: 28px;
-        }
-        .h2{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
-        .a{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
-        .p{
-                flex-direction: column;
-                align-items: center;
-                font-size: 28px;
-        }
+    }
+
+    .main-seccion .contenido1 {
+        width: 100%;
+    }
+
+    .main-seccion .contenido {
+        width: 100%;
+    }
+
+    .banner_video_promocional {
+        width: 100%;
+    }
 }
 
