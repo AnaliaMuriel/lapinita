@@ -32,8 +32,43 @@
         </nav>  
     </header>
 
+
     <main>
-        <section>Seccion de contacto</section>
+        <section>
+            <h2 class="formulario__subtitulo">Formulario de Contacto</h2>   
+            
+            <form class="form" action="" method="post" enctype="">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre"  id="nombre" placeholder="Ingresa tu nombre" id="nombre">
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+                </div>
+                <div>
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu telefono">
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" name="numero" id="edad" placeholder="Puedes ingresar solo numeros">
+                </div>
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" name="correo" id="correo" placeholder="Ingresa tu correo electronico">
+                </div>
+                <div>
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario" placeholder="Ingresar tu comentario" cols="50" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer class="footer">

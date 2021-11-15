@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: rgb(143, 235, 23); /*color de fondo*/
-    color:rgb(9, 66, 4); /*color del texto*/
+    background-color:#34da0a; /*color de fondo*/
+    color:black; /*color del texto*/
     font-family:'Roboto',sans-serif;
 }
 
@@ -80,10 +80,10 @@ h1 {
 /*hero*/
 
 .hero {
-    background-color:rgb(143, 235, 23);
+    background-color:orange;
     height: 600px;
     width: 100%;
-    background-image: url(../imagenes/anana\ 3d.jpg);
+    background-image:url(../imagenes/anana-3d.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -96,7 +96,7 @@ h1 {
 
 .titulo-principal {
     color:white;
-    background-color: tomato;
+    background-color:#34da0a;  
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 16px;
@@ -162,46 +162,46 @@ h1 {
 }
 
 .banner_video_promocional {
-        width: 50%; 
-        height: 100%;
-        object-fit: cover;   
+    width: 50%; 
+    height:100%;
+    object-fit: cover;   
         
-        position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
-        right: 0;
+    position:absolute; /* el elemento pierde su ancho por defecto que es 100 % */
+    right: 0;
 }
 
 .parrafobanner1{
-        font-weight: 100;
-        margin-bottom: 32px ;/*separar elementos uso margin*/
-        color:white
+    font-weight: 100;
+    margin-bottom: 32px ;/*separar elementos uso margin*/
+    color:black;
 }
 .boton{
-        display: inline-block;
-        background-color:rgb(233, 250, 0);
-        text-decoration: none;
-        color:saddlebrown;
-        padding:10px 20px ;
-        border-radius: 20px;
-        font-weight: 900;       
+    display: inline-block;
+    background-color:orange;
+    text-decoration: none;
+    color:black;
+    padding:10px 20px ;
+    border-radius: 20px;
+    font-weight: 900;       
 }
 .titulobanner1 {
-        font-size: 48px;
-        color:white;
-        margin-bottom: 32px;
+    font-size: 48px;
+    color:black;
+    margin-bottom: 32px;
 }
 /*Parrafo*/
 .Creaciones_Artesanles{
-        text-align:center;
+    text-align:center;
 }
 .parrafo_subtitulo {
-        padding: 12px;
-        text-align: center;
-        text-transform: uppercase;
+    padding: 12px;
+    text-align: center;
+    text-transform: uppercase;
 }       
 .parrafo {
-        color: rgb(252, 121, 14);
-        padding: 12px;
-        text-align: right;
+    color: rgb(252, 121, 14);
+    padding: 12px;
+    text-align: right;
 } 
 
 /* nuestros productos */
@@ -236,7 +236,7 @@ h1 {
 
 .producto__icono{
     font-size: 50px;
-    background-color: lightgoldenrodyellow;
+    background-color:#c5da0a;
     color:black;
     border-radius: 50%;
     padding:10px;
@@ -268,7 +268,7 @@ h1 {
 
 /*Formato de estilos para Titulos y Subtitulos*/
 .formulario {
-    background-color: #F0B622;
+    background-color:orange;
     color:black;
     padding: 64px 0;
 
@@ -277,7 +277,7 @@ h1 {
 .formulario__subtitulo {
     color:black;
     padding: 12px;
-    text-align: right;
+    text-align: center;
 }
 
 .form {
@@ -297,7 +297,7 @@ h1 {
 
 /*footer*/
 .footer {
-    background-color:rgb(212, 245, 26);
+    background-color:#34da0a;
     color: black;
     padding:32px 16px;
 }
@@ -305,7 +305,7 @@ h1 {
 .footer_flex-padre{
     display: flex;
     flex-direction: column;    
-    background-color:greenyellow;
+    background-color:yellow;
     color:black;
     text-align:center;   
 }  
@@ -318,85 +318,90 @@ h1 {
 
 /*        .Contactos_Generales*/
 .email {
-        text-align-last: center;
-        justify-content: space-between;
-        padding:16px;
+    text-align-last: center;
+    justify-content: space-between;
+    padding:16px;
 }
 .email_icono {
-        background-color:orange;
-        color:black;
-        font-size: 20px;
+    background-color:orange;
+    color:black;
+    font-size: 20px;
 }
 .redes {
-        color:black;
-        padding:12px;
-        text-align-last: left;
+    color:black;
+    padding:12px;
+    text-align-last: left;
 }
 .redes__sociales {
-        color:black;
-        margin-bottom: 0px;
-        text-align: center;
+    color:black;
+    margin-bottom: 0px;
+    text-align: center;
 }
 .instagram_icono{
-        background-color: orange;
-        color:black;
+    background-color: orange;
+    color:black;
 }
 .facebook_icono{
-        background-color:orange;
-        color:black;
+    background-color:orange;
+    color:black;
 }
 .contacto_email {
-        color:black;
-        margin-bottom: 0px;
-        text-align: center;
+    color:black;
+    margin-bottom: 0px;
+    text-align: center;
 }
 .titulo__proyecto{
-        color:green;
-        margin-bottom: 20px;
-}
-
-.tienda_online {
-        color:rgb(252, 121, 14);
+    color:black;
+    margin-bottom: 20px;
 }
 .parrafo_autor {
-        color:rgb(9, 66, 4);
-        text-align: center;
+    color:black;
+    text-align: center;
 }
 .whatsapp__icono {
-        position: fixed;
-        bottom: 32px;
-        right: 32px;
-        z-index: 1000;
-        display: inline-block;
-        font-size: 50px;
-        background-color: rgb(36, 192, 22);
-        color:black;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 30px;
-        margin:0% ;
-        padding: 0%;
-        box-sizing: border-box; 
-        box-shadow: 10px 10px 5px green;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 1000;
+    display: inline-block;
+    font-size: 50px;
+    background-color:#c5da0a;
+    color:black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 30px;
+    margin:0% ;
+    padding: 0%;
+    box-sizing: border-box; 
+    box-shadow: 10px 10px 5px green;
 }
 .fijar__img {
-        width:200px;
-        height:200px;  
+    width:200px;
+    height:200px;  
 }
-
-.precio_jabon{
-    color:rgb(9, 66, 4); /*color del texto*/
+.listado-productos{
+    width: 100%;
+    text-align: center;
+}
+.producto-2__imagen{
+    width: 100%;
+}
+.producto-2__parrafo{
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: black;
+}
+.precio_agua-micelar{
+    color:black;/*color del texto*/
     font-family:'Roboto',sans-serif;
 }
-
-.precio_agua_de_rosas{
-    color:rgb(9, 66, 4); /*color del texto*/
+.precio_velas{
+    color:black; /*color del texto*/
     font-family:'Roboto',sans-serif;
 }
-
-.agua_jabon {
-    width: 550px;
-    height: 600px;  
+.precio_home-spray{
+    color:black; /*color del texto*/
+    font-family:'Roboto',sans-serif;
 }
 
 /*Medias Querys*/
@@ -404,7 +409,6 @@ h1 {
     h1 {
         font-size: 25px;
     }
-
     .logo {
         width: 60px;
         height: 60px;
