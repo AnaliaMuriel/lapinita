@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Pinita - Productos</title> <!--es lo que vemos en la pestaña del navegador-->
-    <link rel="stylesheet" href="css/estilos.css">
-
+    <title>La Pinita - Productos</title> <!--es lo que vemos en la pestaña del navegador--> 
+        
+        <!-- Vinculacion de CSS - Forma Correcta y Optima -->
+        <!-- CDN y Vinculando los estilos correspondientes -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body> 
@@ -35,34 +38,50 @@
 
     <main>
         <section>
-            <h2 class="listado-productos">Listados Productos</h2>
-            <div class="productos-2">
-                <div class="producto-2">
-                    <img class="producto-2__imagen" src="imagenes/agua-micelar.jpg" alt="">
-                    <h3 class="producto-2__titulo">Agua Micelar Desmaquillante de 125ml</h3>
-                    <p class="producto-2__parrafo">Este producto está compuesto por micelas​ (de ahí el nombre), un conjunto de moléculas de aceite con dos polos: un polo hidrófilo soluble en agua y un polo lipófilo, encargado de atrapar las materias grasas que son incompatibles con el agua.
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <h2 class="listado-productos">Listados Productos</h2>
+                        <div class="card">
+                        <img src="imagenes/agua-micelar.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Agua Micelar Desmaquillante de 125ml</h5>
+                        <p class="card-text">Este producto está compuesto por micelas​ (de ahí el nombre), un conjunto de moléculas de aceite con dos polos: un polo hidrófilo soluble en agua y un polo lipófilo, encargado de atrapar las materias grasas que son incompatibles con el agua.
                         La fórmula del agua micelar permite limpiar la piel sin irritarla.
                         No necesita aclarado y tonifica, hidrata y refresca sin dejar sensación de tirantez ni resecar. Por otro lado, usarlo de manera previa al maquillaje ayuda a que este se fije mejor y luego para desmaquillarte.</p>
-                    <span class="precio_agua-micelar">Precio: 900 $</span>
+                        <a href="#" class="btn btn-primary">Precio: 900 $</a>   
+                    </div>
                 </div>
-                <div class="producto-2">
-                    <img class="producto-2__imagen" src="imagenes/velas.jpg" alt="">
-                    <h3 class="producto-2__titulo">Velas de Soja</h3>
-                    <p class="producto-2__parrafo">Las Velas De Cera de Soja perfuman delicadamente el ambiente incluso sin encenderlas, por dos motivos principales: Porque están perfumadas con extractos y aceites esenciales puros y porque al tener un punto de fusión más bajo conservan mejor el aroma, y lo liberan más suavemente y más estable.
-                     La duración de la cera de soja depende mucho del clima (temperatura y humedad). A pesar de durar más que la parafina, al ser natural, dependemos del ambiente. Para ello recomendamos encenderlas durante 3 horas y luego apagarlas. Para que no se recaliente la cera y duren muchísimo más!.
-                     Aromas Rosa,Sandalo,Magnolia,Lima,Rosa,Tilo,Verbena,Floral</p>
-                    <span class="precio_velas">Precio: 600 $</span>
+            </div>   
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                        <img src="imagenes/velas.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Velas de Soja</h5>
+                        <p class="card-text">Las Velas De Cera de Soja perfuman delicadamente el ambiente incluso sin encenderlas, por dos motivos principales: Porque están perfumadas con extractos y aceites esenciales puros y porque al tener un punto de fusión más bajo conservan mejor el aroma, y lo liberan más suavemente y más estable.
+                        La duración de la cera de soja depende mucho del clima (temperatura y humedad). A pesar de durar más que la parafina, al ser natural, dependemos del ambiente. Para ello recomendamos encenderlas durante 3 horas y luego apagarlas. Para que no se recaliente la cera y duren muchísimo más!.
+                        Aromas Rosa,Sandalo,Magnolia,Lima,Rosa,Tilo,Verbena,Floral.</p>
+                        <a href="#" class="btn btn-primary">Precio: 600 $</a>       
+                    </div>
                 </div>
-                <div class="producto-2">
-                    <img class="producto-2__imagen" src="imagenes/home-spray.jpg" alt="">
-                    <h3 class="producto-2__titulo">Home Spray</h3>
-                    <p class="producto-2__parrafo">Home Spray 250 ml 100% natural, con aceites esenciales, para perfumar tu hogar, ropa de cama, etc .
-                     Disponibles En sus Fragancias Vainilla,Limon,Lavanda,Uva y Frutal.</p>
-                    <span class="precio_home-spary">Precio: 1000 $</span>
+            </div>   
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="card">
+                        <img src="imagenes/home-spray.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Home Spray</h5>
+                        <p class="card-text">Home Spray 250 ml 100% natural, con aceites esenciales, para perfumar tu hogar, ropa de cama, etc .
+                        Disponibles En sus Fragancias Vainilla,Limon,Lavanda,Uva y Frutal.</p>
+                        <a href="#" class="btn btn-primary">Precio: 1000 $</a>
+                    </div>
                 </div>
-            </div>
+            </div>              
         </section>
-    </main>
+   </main>
 
     <footer class="footer">
         <div class="Contactos_Generales">
@@ -93,6 +112,13 @@
             <p class="parrafo_autor">Derechos Reservados Lararia</p>
         </div>
     </footer>
+
+    <!-- Descargando Bootstrap y Vinculando javascript correspondiente -->
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+
+    <!-- CDN y Vinculando javascript correspondientes -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>
          
