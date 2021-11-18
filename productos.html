@@ -16,7 +16,7 @@
     <header class="cabecera">
         <div class="contenedor">
             <a class="titulo__web" href="index.html">
-                <h1>Tienda Online La Piñita</h1>
+                <h1>La Piñita</h1>
             </a>
             <img class="logo" src="imagenes/la-pinita-logo-circulo.png" alt="logotipo de mi marca">
         </div>
@@ -37,19 +37,22 @@
 
 
     <main>
-        <section>
+        <section class="hero">
+            <h1 class="titulo-principal">Productos</h1>
+        </section>
+        <section class="productos">
             <div class="container">
+                <h2 class="listado-productos">Listados Productos</h2>
                 <div class="row">
                     <div class="col-12 col-md-4">
-                        <h2 class="listado-productos">Listados Productos</h2>
                         <div class="card">
                         <img src="imagenes/agua-micelar.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Agua Micelar Desmaquillante de 125ml</h5>
+                        <h5 class="card-title text-center">Agua Micelar Desmaquillante de 125ml</h5>
                         <p class="card-text">Este producto está compuesto por micelas​ (de ahí el nombre), un conjunto de moléculas de aceite con dos polos: un polo hidrófilo soluble en agua y un polo lipófilo, encargado de atrapar las materias grasas que son incompatibles con el agua.
                         La fórmula del agua micelar permite limpiar la piel sin irritarla.
                         No necesita aclarado y tonifica, hidrata y refresca sin dejar sensación de tirantez ni resecar. Por otro lado, usarlo de manera previa al maquillaje ayuda a que este se fije mejor y luego para desmaquillarte.</p>
-                        <a href="#" class="btn btn-primary">Precio: 900 $</a>   
+                        <h2>Precio: $ 900</h2>
                     </div>
                 </div>
             </div>   
@@ -59,11 +62,12 @@
                         <div class="card">
                         <img src="imagenes/velas.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Velas de Soja</h5>
+                        <h5 class="card-title text-center">Velas de Soja</h5>
                         <p class="card-text">Las Velas De Cera de Soja perfuman delicadamente el ambiente incluso sin encenderlas, por dos motivos principales: Porque están perfumadas con extractos y aceites esenciales puros y porque al tener un punto de fusión más bajo conservan mejor el aroma, y lo liberan más suavemente y más estable.
-                        La duración de la cera de soja depende mucho del clima (temperatura y humedad). A pesar de durar más que la parafina, al ser natural, dependemos del ambiente. Para ello recomendamos encenderlas durante 3 horas y luego apagarlas. Para que no se recaliente la cera y duren muchísimo más!.
-                        Aromas Rosa,Sandalo,Magnolia,Lima,Rosa,Tilo,Verbena,Floral.</p>
-                        <a href="#" class="btn btn-primary">Precio: 600 $</a>       
+                        La duración de la cera de soja depende mucho del clima (temperatura y humedad). A pesar de durar más que la parafina, al ser natural, dependemos del ambiente. Para ello recomendamos encenderlas durante 3 horas y luego apagarlas. 
+                        Para que no se recaliente la cera y duren muchísimo más!.
+                        Aromas Rosa,Sandalo,Magnolia,Rosa,Tilo,Verbena y Floral.</p>
+                        <h2>Precio: $ 600</h2>       
                     </div>
                 </div>
             </div>   
@@ -73,13 +77,42 @@
                         <div class="card">
                         <img src="imagenes/home-spray.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                        <h5 class="card-title">Home Spray</h5>
+                        <h5 class="card-title text-center">Home Spray</h5>
                         <p class="card-text">Home Spray 250 ml 100% natural, con aceites esenciales, para perfumar tu hogar, ropa de cama, etc .
-                        Disponibles En sus Fragancias Vainilla,Limon,Lavanda,Uva y Frutal.</p>
-                        <a href="#" class="btn btn-primary">Precio: 1000 $</a>
+                        Fragancias Vainilla,Limon,Lavanda,Uva y Frutal.</p>
+                        <h2>Precio: $ 1000</h2>
                     </div>
                 </div>
             </div>              
+        </section>
+        <section class="galeria">
+            <div class="container">
+                <h2 class="galeria__titulo">Promociones</h2>
+                <div class="row">
+                    <div class="col-12"> 
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="imagenes/jabonera-luffa.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/jabon-luffa.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="imagenes/jabon-carbon-avena.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                                </button>
+                    </div>
+                </div>
+            </div>
         </section>
    </main>
 

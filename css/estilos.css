@@ -39,7 +39,7 @@ h1 {
 
 .titulo__web  {
     text-decoration: none;
-    width: 70%;
+    width: 70%;  
 }
 
 .contenedor {     
@@ -242,6 +242,7 @@ h1 {
     padding:10px;
     display: inline-block;
     margin-bottom: 20px;
+    text-decoration:center
 }
 
 .producto img {
@@ -403,6 +404,26 @@ h1 {
     color:black; /*color del texto*/
     font-family:'Roboto',sans-serif;
 }
+.productos{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.listado-productos, .formulario__titulo{
+    font-size: 40px;
+    font-style:initial;
+    text-align: left;
+    margin-bottom: 32px;
+}
+.galeria, .formulario{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+.galeria__titulo{
+    font-size: 40px;
+    font-style: initial;
+    text-align: center;
+    margin-bottom: 32px;
+}
 
 /*Medias Querys*/
 @media (max-width: 768px) {
@@ -438,6 +459,9 @@ h1 {
 
     .banner_video_promocional {
         width: 100%;
+    }
+    .banner_video{
+        object-fit: contain;
     }
 }
 
